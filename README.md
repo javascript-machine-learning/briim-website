@@ -1,4 +1,4 @@
-# 🐣 gatsby-product-landing
+# 🐣 gatsby-movement
 
 Your minimal yet slick landing page to create a movement around your idea, service or product.
 
@@ -8,16 +8,16 @@ Your minimal yet slick landing page to create a movement around your idea, servi
 
 ## Setup
 
-* `git clone git@github.com:rwieruch/gatsby-product-landing.git`
-* `cd gatsby-product-landing`
+* `git clone git@github.com:rwieruch/gatsby-movement.git`
+* `cd gatsby-movement`
 * `npm install`
 * `gatsby develop`
 * visit http://localhost:8000/
 
 ## Setup via Gatsby CLI
 
-* `gatsby new gatsby-product-landing git@github.com:rwieruch/gatsby-product-landing.git`
-* `cd gatsby-product-landing`
+* `gatsby new gatsby-movement git@github.com:rwieruch/gatsby-movement.git`
+* `cd gatsby-movement`
 * `npm install`
 * `gatsby develop`
 * visit http://localhost:8000/

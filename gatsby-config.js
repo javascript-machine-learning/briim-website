@@ -3,7 +3,8 @@ const GOOGLE_ANALYTICS_TRACKING_ID = 'FOOOO';
 
 module.exports = {
   siteMetadata: {
-    title: 'Machine Learning JavaScript',
+    title: 'gatsby-movement',
+    description: 'gatsby-movement',
   },
   plugins: [
     {
@@ -42,7 +43,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
   ],

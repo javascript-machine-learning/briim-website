@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 
-import img from './banner.jpg';
+import banner from '../../assets/banner.jpg';
+import FadeIn from '../FadeIn';
 
 const NAVBAR_HEIGHT = 55;
 
@@ -18,7 +19,7 @@ const CaptionHeader = styled.h1`
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 5.5px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0px;
 `
 
@@ -29,12 +30,12 @@ const CaptionSubheader = styled.h2`
   font-weight: 500;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: .35;
 `
 
-const BackgroundImage = styled.div`
-  background-image: url(${img});
+const BackgroundImage = FadeIn.extend`
+  background-image: url(${banner});
   background-position: center;
   background-repeat: no-repeat;
 
@@ -42,8 +43,6 @@ const BackgroundImage = styled.div`
   height: 100%;
   display: block;
   background-size: cover;
-
-  animation: fadeIn 0.5s ease-out;
 
   &:before {
     content: '';
@@ -55,16 +54,6 @@ const BackgroundImage = styled.div`
     background-color: #000000;
     opacity: 0.8;
   }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
 `
 
 const landingNav = css`
@@ -72,7 +61,7 @@ const landingNav = css`
 `;
 
 const nonLandingNav = css`
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 1px 20px -10px rgba(0,0,0,0.75);
   color: #a8a8a8;
 `;
@@ -84,17 +73,18 @@ const Navbar = styled.nav`
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 
   ${({ isLanding }) => isLanding ? landingNav : nonLandingNav}
 `
 
 const landingLink = css`
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: .35;
   transition: opacity .25s ease-in-out;
 
   &:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 1;
   }
 `
@@ -173,7 +163,7 @@ const Landing = () =>
   <BackgroundImage>
     <Navigation />
     <Caption>
-      <CaptionHeader>Rim</CaptionHeader>
+      <CaptionHeader>Briim</CaptionHeader>
       <CaptionSubheader>Machine Learning in JavaScript</CaptionSubheader>
     </Caption>
   </BackgroundImage>

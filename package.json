@@ -1,6 +1,6 @@
 {
-  "name": "machine-learning-javascript",
-  "description": "machine learning javascript",
+  "name": "gatsby-movement",
+  "description": "gatsby",
   "version": "1.0.0",
   "author": "Robin Wieruch <wrobin@gmx.net>",
   "dependencies": {
@@ -15,8 +15,8 @@
     "typography-theme-moraga": "^0.15.10"
   },
   "keywords": [
-    "machine learning",
-    "javascript"
+    "gatsby",
+    "blog"
   ],
   "license": "",
   "main": "n/a",

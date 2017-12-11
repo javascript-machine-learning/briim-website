@@ -7,7 +7,6 @@ const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
-  text-align: center;
 `;
 
 const Footer = () =>
@@ -16,6 +15,10 @@ const Footer = () =>
       Created by{' '}
       <Link href="https://www.robinwieruch.de/">
         Robin Wieruch
+      </Link>
+      {' '}and built with{' '}
+      <Link href="https://github.com/rwieruch/gatsby-movement">
+        Gatsby.js
       </Link>
     </small>
   </FooterContainer>
