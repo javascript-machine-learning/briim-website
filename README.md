@@ -1,15 +1,22 @@
 # 🐣 gatsby-product-landing
 
-TODO Your minimal yet powerful open source solution to crowd fund your ideas. Open crowd fund is an alternative to all the enterprise crowdfunding platforms and applications. You can do it yourself. Take control over your project fundings, stay flexible by creating the content yourself, and minimize the fees by cutting out the middlemen. Everything you need is to host it yourself.
+Your minimal yet slick landing page to create a movement around your idea, service or product.
 
 [Demo TODO](https://www.roadtolearnreact.com/) | Powered by [Gatsby](https://github.com/gatsbyjs/gatsby)
 
-* Minimal Dependencies
-* Slick Landing Product Page
+<img width="1265" alt="screen shot 2017-12-11 at 10 36 36" src="https://user-images.githubusercontent.com/2479967/33813540-663618d8-de5f-11e7-9958-a0a1406041bf.png">
 
 ## Setup
 
 * `git clone git@github.com:rwieruch/gatsby-product-landing.git`
+* `cd gatsby-product-landing`
+* `npm install`
+* `gatsby develop`
+* visit http://localhost:8000/
+
+## Setup via Gatsby CLI
+
+* `gatsby new gatsby-product-landing git@github.com:rwieruch/gatsby-product-landing.git`
 * `cd gatsby-product-landing`
 * `npm install`
 * `gatsby develop`
