@@ -4,23 +4,26 @@ import Section from '../components/Section';
 import Aside from '../components/Aside';
 import Button from '../components/Button';
 import Link from '../components/Link';
+import TextCenter from '../components/TextCenter';
 import { ImageFadeIn } from '../components/Image';
 
 import neuralStyleTransfer from '../assets/neural-style-transfer.jpg';
+import mnistNeuralNetwork from '../assets/mnist-neural-network.jpg';
 
 const IndexPage = () => (
   <div>
     <Section>
       <Aside>
         <h3>
-          Learn Machine Learning, but in JavaScript
+          Learn Machine Learning. But in JavaScript.
         </h3>
         <p>
-          Learn about Artificial Intelligence and Data Science, governed by Machine Learning and Deep Learning. Take it right to your browser with JavaScript and WebGL.
+          Learn about artificial intelligence and data science, two fields which are governed by machine learning, in JavaScript. Take it right to your browser with WebGL. BRIIM is a movement to enable JavaScript enthusiasts and web developers in machine learning.
         </p>
       </Aside>
       <Aside>
         <ImageFadeIn src={neuralStyleTransfer} alt="neural-style-transfer" />
+        <TextCenter><p>Neural Style Transfer</p></TextCenter>
       </Aside>
     </Section>
 
@@ -30,28 +33,8 @@ const IndexPage = () => (
           Dig into the Learning Material
         </h3>
         <p>
-          Explore curated and free learning material for Machine Learning in JavaScript curated
+          Explore curated learning material for Machine Learning in JavaScript. Contribute to it yourself by providing useful resources.
         </p>
-      </Aside>
-      <Aside>
-        <p>
-          Screenshot
-        </p>
-      </Aside>
-    </Section>
-
-    <Section>
-      <Aside>
-        <h3>
-          Explore in Motion
-        </h3>
-        <p>
-          Get motivated to learn Machine Learning as web developer.
-        </p>
-
-        <Button type="button" onClick={() => {}}>
-          Projects
-        </Button>
       </Aside>
       <Aside>
         <p>
@@ -66,17 +49,43 @@ const IndexPage = () => (
           Take the JavaScript in ML Course
         </h3>
         <p>
-          Learn about AI and Data Science, combined with Machine Learning and the latest buzz around Deep Learning in JavaScript and in your browser.
+          Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
         </p>
 
         <Button type="button" disabled="true" onClick={() => {}}>
-          Soon [Early 2018]
+          [WIP: Early 2018]
         </Button>
       </Aside>
       <Aside>
+        <h3>
+
+        </h3>
+        <ul>
+          <li>Train neural networks in the browser</li>
+          <li>Apply SVM, K-Means and PCA</li>
+          <li>Implement shallow algorithms</li>
+          <li>Build a recommender system</li>
+          <li>Dive into subfields of AI (e.g. NLP)</li>
+        </ul>
+      </Aside>
+    </Section>
+
+    <Section>
+      <Aside>
+        <h3>
+          Visualize Algorithms in Motion
+        </h3>
         <p>
-          Screenshot
+          Explore machine learning in JavaScript projects. Become curious and learn machine learning in JavaScript yourself.
         </p>
+
+        <Button type="button" onClick={() => {}}>
+          Projects
+        </Button>
+      </Aside>
+      <Aside>
+        <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
+        <TextCenter><p>MNIST Digit Recognition</p></TextCenter>
       </Aside>
     </Section>
 

@@ -116,12 +116,14 @@ class Navigation extends Component {
     super(props);
 
     this.state = {
-      windowHeight: window.innerHeight,
+      windowHeight: 0,
       isLanding: true,
     };
   }
 
   componentDidMount() {
+    this.setState(() => ({ windowHeight: window.innerHeight }));
+
     window.addEventListener('scroll', (event) => {
       const { windowHeight } = this.state;
 
