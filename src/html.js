@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react';
+import config from './config';
 
 // import faviconApple from './assets/favicons/apple-touch-icon.png';
 // import favicon32 from './assets/favicons/favicon-32x32.png';
@@ -28,11 +29,34 @@ module.exports = class HTML extends React.Component {
     return (
       <html {...this.props.htmlAttributes} style={{ height: '100%' }}>
         <head>
+
+
+          {/* General tags */}
+          <meta name="title" content={config.title} />
+          <meta name="description" content={config.description} />
+          <meta name="image" content={config.image} />
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-          <meta title="gatsby-movement" />
-          <meta description="gatsby-movement" />
+
+          {/* OpenGraph tags */}
+          <meta property="og:url" content={config.url} />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={config.title} />
+          <meta property="og:description" content={config.description} />
+          <meta property="og:image" content={config.image} />
+
+          {/* Twitter Card tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:creator"
+            content={config.userTwitter ? config.userTwitter : ""}
+          />
+          <meta name="twitter:title" content={config.title} />
+          <meta name="twitter:description" content={config.description} />
+          <meta name="twitter:image" content={config.image} />
+
+
 
           {this.props.headComponents}
           {css}

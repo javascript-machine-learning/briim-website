@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Link from '../Link';
+import config from '../../config';
 
 const FooterContainer = styled.div`
   display: flex;
@@ -12,25 +13,14 @@ const FooterContainer = styled.div`
 const Footer = () =>
   <FooterContainer>
     <p>
-      <Link href="###mailto:briim@gmail.com">
-        Contact
-      </Link>
-      <span> / </span>
-      <Link href="https://www.getrevue.co/profile/briim">
-        Newsletter
-      </Link>
-      <span> / </span>
-      <Link href="#">
-        Slack
-      </Link>
-      <span> / </span>
-      <Link href="#">
-        GitHub
-      </Link>
-      <span> / </span>
-      <Link href="https://twitter.com/rwieruch">
-        Twitter
-      </Link>
+      {config.footerLinks.map((link, i) =>
+        <span>
+          <Link href={link.url}>
+            {link.label}
+          </Link>
+          <span> / </span>
+        </span>
+      )}
     </p>
   </FooterContainer>
 

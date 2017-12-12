@@ -3,6 +3,7 @@ import React from 'react';
 import Section from '../components/Section';
 import Aside from '../components/Aside';
 import Button from '../components/Button';
+import ButtonButLink from '../components/ButtonButLink';
 import Link from '../components/Link';
 import TextCenter from '../components/TextCenter';
 import { ImageFadeIn } from '../components/Image';
@@ -52,9 +53,9 @@ const IndexPage = () => (
           Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
         </p>
 
-        <Button type="button" disabled="true" onClick={() => {}}>
+        <ButtonButLink type="button" href={'#'}>
           [WIP: Early 2018]
-        </Button>
+        </ButtonButLink>
       </Aside>
       <Aside>
         <ul>
