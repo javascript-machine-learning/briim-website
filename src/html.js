@@ -1,11 +1,6 @@
 import React from 'react';
 import config from './config';
 
-// import faviconApple from './assets/favicons/apple-touch-icon.png';
-// import favicon32 from './assets/favicons/favicon-32x32.png';
-// import favicon16 from './assets/favicons/favicon-16x16.png';
-// import faviconICO from './assets/favicons/favicon.ico';
-
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
