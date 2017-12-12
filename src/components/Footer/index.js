@@ -11,16 +11,27 @@ const FooterContainer = styled.div`
 
 const Footer = () =>
   <FooterContainer>
-    <small>
-      Created by{' '}
-      <Link href="https://www.robinwieruch.de/">
-        Robin Wieruch
+    <p>
+      <Link href="###mailto:briim@gmail.com">
+        Contact
       </Link>
-      {' '}and built with{' '}
-      <Link href="https://github.com/rwieruch/gatsby-movement">
-        Gatsby.js
+      <span> / </span>
+      <Link href="https://www.getrevue.co/profile/briim">
+        Newsletter
       </Link>
-    </small>
+      <span> / </span>
+      <Link href="#">
+        Slack
+      </Link>
+      <span> / </span>
+      <Link href="#">
+        GitHub
+      </Link>
+      <span> / </span>
+      <Link href="https://twitter.com/rwieruch">
+        Twitter
+      </Link>
+    </p>
   </FooterContainer>
 
 export default Footer;

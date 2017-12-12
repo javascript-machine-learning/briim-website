@@ -5,7 +5,7 @@ import { TABLET_SIZE, MOBILE_SIZE } from '../../constants/media';
 
 const Section = styled.section`
   display: flex;
-  padding: 40px 150px;
+  padding: 80px 150px;
 
   &:nth-child(odd) {
     background: #ffffff;

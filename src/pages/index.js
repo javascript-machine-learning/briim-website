@@ -57,9 +57,6 @@ const IndexPage = () => (
         </Button>
       </Aside>
       <Aside>
-        <h3>
-
-        </h3>
         <ul>
           <li>Train neural networks in the browser</li>
           <li>Apply SVM, K-Means and PCA</li>
@@ -92,10 +89,10 @@ const IndexPage = () => (
     <Section>
       <Aside>
         <h3>
-          Create a Movement
+          Create a Movement.
         </h3>
         <p>
-          Machine Learning is pushed from all several programming languages but JavaScript. Let's take it on a next level for web development and web developers as well. It's not an effort of an individual, but of a communtiy.
+          Machine Learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web development and web developers as well. It's not an effort of an individual, but of a communtiy.
         </p>
       </Aside>
       <Aside>

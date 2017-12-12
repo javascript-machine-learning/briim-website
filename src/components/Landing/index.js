@@ -166,7 +166,7 @@ const Landing = () =>
     <Navigation />
     <Caption>
       <CaptionHeader>Briim</CaptionHeader>
-      <CaptionSubheader>Machine Learning in JavaScript</CaptionSubheader>
+      <CaptionSubheader>A Machine Learning in JavaScript Movement</CaptionSubheader>
     </Caption>
   </BackgroundImage>
 
