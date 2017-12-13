@@ -1,8 +1,8 @@
 import React from 'react';
 import GatsbyLink from 'gatsby-link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const Link = styled(GatsbyLink)`
+const linkBase = css`
   text-decoration: none;
 
   &:hover {
@@ -14,6 +14,18 @@ const Link = styled(GatsbyLink)`
   &:active {
     text-decoration: none;
   }
+`
+
+const Link = styled(GatsbyLink)`
+  ${linkBase}
 `;
+
+const Anchor = styled.a`
+  ${linkBase}
+`;
+
+export {
+  Anchor,
+};
 
 export default Link;

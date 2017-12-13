@@ -2,9 +2,6 @@ import React, { createElement } from 'react';
 
 import Section from '../Section';
 import Aside, { BorderedAside } from '../Aside';
-import Button from '../Button';
-import ButtonButLink from '../ButtonButLink';
-import Link from '../Link';
 
 const Topics = ({ topics }) =>
   <div>

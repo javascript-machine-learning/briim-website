@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
+import Link from '../Link';
+
 const buttonBase = css`
   display: inline-block;
   border: 1px solid #000000;
@@ -27,8 +29,17 @@ const Button = styled.button`
   }
 `;
 
+const ButtonButLink = styled(Link)`
+  ${buttonBase}
+`
+
+const ButtonButAnchor = styled.a`
+  ${buttonBase}
+`
+
 export {
-  buttonBase,
+  ButtonButAnchor,
+  ButtonButLink,
 };
 
 export default Button;

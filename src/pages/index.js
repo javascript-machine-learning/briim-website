@@ -5,11 +5,11 @@ import Page from '../components/Page';
 import Landing from '../components/Landing';
 import Section from '../components/Section';
 import Aside from '../components/Aside';
-import Button from '../components/Button';
-import ButtonButLink from '../components/ButtonButLink';
-import Link from '../components/Link';
 import TextCenter from '../components/TextCenter';
+import Button from '../components/Button';
+import { Anchor } from '../components/Link';
 import { ImageFadeIn } from '../components/Image';
+import { ButtonButAnchor } from '../components/Button';
 
 import neuralStyleTransfer from '../assets/neural-style-transfer.jpg';
 import mnistNeuralNetwork from '../assets/mnist-neural-network.jpg';
@@ -46,9 +46,9 @@ const IndexPage = ({ header, subheader }) => (
             Explore curated learning material for Machine Learning in JavaScript. Contribute to it yourself by providing useful resources.
           </p>
 
-          <ButtonButLink to={'/learn'}>
-            LEarn
-          </ButtonButLink>
+          <ButtonButAnchor href={'/learn'}>
+            Learn
+          </ButtonButAnchor>
         </Aside>
         <Aside>
           <p>
@@ -66,9 +66,9 @@ const IndexPage = ({ header, subheader }) => (
             Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
           </p>
 
-          <ButtonButLink to={'https://www.getrevue.co/profile/briim'}>
+          <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
             [WIP: Early 2018]
-          </ButtonButLink>
+          </ButtonButAnchor>
         </Aside>
         <Aside>
           <ul>
@@ -90,9 +90,9 @@ const IndexPage = ({ header, subheader }) => (
             Explore machine learning in JavaScript projects. Become curious and learn machine learning in JavaScript yourself.
           </p>
 
-          <ButtonButLink to={'/projects'}>
+          <ButtonButAnchor href={'/projects'}>
             Projects
-          </ButtonButLink>
+          </ButtonButAnchor>
         </Aside>
         <Aside>
           <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
@@ -111,9 +111,9 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
         <Aside>
           <ul>
-            <li>Join Newsletter for <Link to="https://www.getrevue.co/profile/briim">Updates</Link></li>
-            <li>Join Slack for <Link to="#slack">Discussions</Link></li>
-            <li>Join for <Link to="#github">Contributions</Link></li>
+            <li>Join Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
+            <li>Join Slack for <Anchor href="#slack">Discussions</Anchor></li>
+            <li>Join for <Anchor href="#github">Contributions</Anchor></li>
           </ul>
         </Aside>
       </Section>
