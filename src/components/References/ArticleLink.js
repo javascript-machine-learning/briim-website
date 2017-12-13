@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from '../Link';
+import { Anchor } from '../Link';
 
 const ArticleLink = ({ article }) =>
-  <Link to={article}>Read about the Topic</Link>
+  <Anchor href={article}>Read about the Topic</Anchor>
 
 export default ArticleLink;

@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from '../Link';
+import { Anchor } from '../Link';
 
 const SourceLink = ({ source }) =>
-  <Link to={source}>Explore Source Code</Link>
+  <Anchor href={source}>Explore Source Code</Anchor>
 
 export default SourceLink;

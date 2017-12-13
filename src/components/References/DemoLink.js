@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from '../Link';
+import { Anchor } from '../Link';
 
 const DemoLink = ({ demo }) =>
-  <Link to={demo}>Try the Demo</Link>
+  <Anchor href={demo}>Try the Demo</Anchor>
 
 export default DemoLink;
