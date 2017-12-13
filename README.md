@@ -4,7 +4,7 @@ Your minimal yet slick landing page to create a movement around your idea, servi
 
 [Demo TODO](https://www.roadtolearnreact.com/) | Powered by [Gatsby](https://github.com/gatsbyjs/gatsby)
 
-<img width="1265" alt="screen shot 2017-12-11 at 10 36 36" src="https://user-images.githubusercontent.com/2479967/33813540-663618d8-de5f-11e7-9958-a0a1406041bf.png">
+<img width="1275" alt="screen shot 2017-12-13 at 16 06 22" src="https://user-images.githubusercontent.com/2479967/33928107-a7903e0a-e01f-11e7-947d-431c0323129b.png">
 
 ## Setup
 
