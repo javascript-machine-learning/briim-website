@@ -1,5 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const alternating = css`
+  flex-direction: row-reverse;
+`;
+
+const normal = css`
+  flex-direction: row;
+`;
 
 import { TABLET_SIZE, MOBILE_SIZE } from '../../constants/media';
 
@@ -13,7 +21,8 @@ const Section = styled.section`
 
   &:nth-child(even) {
     background: #fafafa;
-    flex-direction: row-reverse;
+
+    ${({ isAlternating }) => isAlternating ? alternating : normal}
   }
 
   @media (max-width: ${TABLET_SIZE}px) {

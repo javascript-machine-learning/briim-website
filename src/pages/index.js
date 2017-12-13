@@ -13,7 +13,7 @@ import mnistNeuralNetwork from '../assets/mnist-neural-network.jpg';
 
 const IndexPage = () => (
   <div>
-    <Section>
+    <Section isAlternating={true}>
       <Aside>
         <h3>
           Learn Machine Learning. But in JavaScript.
@@ -28,7 +28,7 @@ const IndexPage = () => (
       </Aside>
     </Section>
 
-    <Section>
+    <Section isAlternating={true}>
       <Aside>
         <h3>
           Dig into the Learning Material
@@ -36,6 +36,10 @@ const IndexPage = () => (
         <p>
           Explore curated learning material for Machine Learning in JavaScript. Contribute to it yourself by providing useful resources.
         </p>
+
+        <ButtonButLink href={'/learn'}>
+          LEarn
+        </ButtonButLink>
       </Aside>
       <Aside>
         <p>
@@ -44,7 +48,7 @@ const IndexPage = () => (
       </Aside>
     </Section>
 
-    <Section>
+    <Section isAlternating={true}>
       <Aside>
         <h3>
           Take the JavaScript in ML Course
@@ -53,7 +57,7 @@ const IndexPage = () => (
           Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
         </p>
 
-        <ButtonButLink type="button" href={'#'}>
+        <ButtonButLink href={'https://www.getrevue.co/profile/briim'}>
           [WIP: Early 2018]
         </ButtonButLink>
       </Aside>
@@ -68,7 +72,7 @@ const IndexPage = () => (
       </Aside>
     </Section>
 
-    <Section>
+    <Section isAlternating={true}>
       <Aside>
         <h3>
           Visualize Algorithms in Motion
@@ -77,9 +81,9 @@ const IndexPage = () => (
           Explore machine learning in JavaScript projects. Become curious and learn machine learning in JavaScript yourself.
         </p>
 
-        <Button type="button" onClick={() => {}}>
+        <ButtonButLink href={'/projects'}>
           Projects
-        </Button>
+        </ButtonButLink>
       </Aside>
       <Aside>
         <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
@@ -87,7 +91,7 @@ const IndexPage = () => (
       </Aside>
     </Section>
 
-    <Section>
+    <Section isAlternating={true}>
       <Aside>
         <h3>
           Create a Movement.
@@ -99,8 +103,8 @@ const IndexPage = () => (
       <Aside>
         <ul>
           <li>Join Newsletter for <Link href="https://www.getrevue.co/profile/briim">Updates</Link></li>
-          <li>Join Slack for <Link href="#">Discussions</Link></li>
-          <li>Join Facebook for <Link href="https://www.facebook.com/groups/briim/">Sharing</Link></li>
+          <li>Join Slack for <Link href="#slack">Discussions</Link></li>
+          <li>Join for <Link href="#github">Contributions</Link></li>
         </ul>
       </Aside>
     </Section>

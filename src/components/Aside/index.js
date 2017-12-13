@@ -13,4 +13,14 @@ const Aside = styled.aside`
   }
 `;
 
+const BorderedAside = Aside.extend`
+  border-color: #eaeaea;
+
+  ${({ direction }) => `border-${direction}: 1px solid;`}
+`
+
+export {
+  BorderedAside,
+};
+
 export default Aside;

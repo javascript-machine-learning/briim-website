@@ -14,11 +14,11 @@ const Footer = () =>
   <FooterContainer>
     <p>
       {config.footerLinks.map((link, i) =>
-        <span>
+        <span key={i}>
           <Link href={link.url}>
             {link.label}
           </Link>
-          <span> / </span>
+          {i + 1 < config.footerLinks.length ? <span> / </span> : null}
         </span>
       )}
     </p>

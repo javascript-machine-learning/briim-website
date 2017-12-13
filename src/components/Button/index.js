@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const Button = styled.button`
+const buttonBase = css`
   display: inline-block;
   border: 1px solid #000000;
   border-radius: 0px;
@@ -17,10 +17,18 @@ const Button = styled.button`
   letter-spacing: .1em;
   text-transform: uppercase;
   line-height: 20px;
+`
+
+const Button = styled.button`
+  ${buttonBase}
 
   &:focus {
     outline: none;
   }
 `;
+
+export {
+  buttonBase,
+};
 
 export default Button;
