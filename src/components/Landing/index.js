@@ -10,6 +10,10 @@ const Caption = styled.div`
   left: 0;
   top: 45%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 `;
 
@@ -28,6 +32,7 @@ const CaptionSubheader = styled.h2`
   letter-spacing: 3.5px;
   font-weight: 500;
   text-transform: uppercase;
+  max-width: 400px;
 
   color: #ffffff;
   opacity: .35;
@@ -55,12 +60,12 @@ const BackgroundImage = FadeIn.extend`
   }
 `
 
-const Landing = () =>
+const Landing = ({ header, subheader, hasBack }) =>
   <BackgroundImage>
-    <Navigation />
+    <Navigation hasBack={hasBack} />
     <Caption>
-      <CaptionHeader>Briim</CaptionHeader>
-      <CaptionSubheader>A Machine Learning in JavaScript Movement</CaptionSubheader>
+      <CaptionHeader>{header}</CaptionHeader>
+      <CaptionSubheader>{subheader}</CaptionSubheader>
     </Caption>
   </BackgroundImage>
 

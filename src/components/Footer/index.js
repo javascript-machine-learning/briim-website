@@ -7,7 +7,6 @@ import config from '../../config';
 const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 20px;
 `;
 
 const Footer = () =>
