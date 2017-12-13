@@ -1,10 +1,9 @@
-// TODO
-const GOOGLE_ANALYTICS_TRACKING_ID = 'FOOOO';
+const GOOGLE_ANALYTICS_TRACKING_ID = 'UA-65599459-9';
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-movement',
-    description: 'gatsby-movement',
+    title: 'BRIIM',
+    description: 'A Machine Learning in JavaScript Movement',
   },
   plugins: [
     {

@@ -1,8 +1,8 @@
 import banner from './assets/banner.jpg';
 
 module.exports = {
-  title: 'gatsby-movement',
-  description: 'gatsby-movement',
+  title: 'BRIIM',
+  description: 'A Machine Learning in JavaScript Movement',
   image: banner,
   userTwitter: 'rwieruch',
   url: 'https://bri.im',
@@ -23,7 +23,7 @@ module.exports = {
   footerLinks: [
     {
       label: 'Contact',
-      url: 'mailto:briim@gmail.com',
+      url: 'mailto:briim.newsletter@gmail.com',
     },
     {
       label: 'Newsletter',
@@ -31,11 +31,11 @@ module.exports = {
     },
     {
       label: 'Slack',
-      url: '#',
+      url: 'https://slack.bri.im/',
     },
     {
       label: 'GitHub',
-      url: '#',
+      url: 'https://github.com/javascript-machine-learning',
     },
     {
       label: 'Twitter',
