@@ -2,7 +2,7 @@ import React from 'react';
 
 import Popularity from '../components/References/Popularity';
 import DemoLink from '../components/References/DemoLink';
-import SourceCodeLink from '../components/References/SourceCodeLink';
+import SourceLink from '../components/References/SourceLink';
 
 const PROJECTS_LIST = [
   {
@@ -16,7 +16,7 @@ const PROJECTS_LIST = [
     references: [
       ({ values }) => <Popularity popularity={values.popularity} />,
       ({ values }) => <DemoLink demo={values.demo} />,
-      ({ values }) => <SourceCodeLink source={values.source} />,
+      ({ values }) => <SourceLink source={values.source} />,
     ],
   },
   {
@@ -30,15 +30,15 @@ const PROJECTS_LIST = [
     references: [
       ({ values }) => <Popularity popularity={values.popularity} />,
       ({ values }) => <DemoLink demo={values.demo} />,
-      ({ values }) => <SourceCodeLink source={values.source} />,
+      ({ values }) => <SourceLink source={values.source} />,
     ],
   },
 ];
 
 const PROJECTS = {
   header: 'Projects',
-  paragraph: 'Exciting projects in Machine Learning with JavaScript to get you motivated to join the movement.',
+  paragraph: 'Insightful projects taken from Machine Learning in JavaScript to get you motivated joining the movement.',
   list: PROJECTS_LIST,
-}
+};
 
 export default PROJECTS;

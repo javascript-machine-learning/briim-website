@@ -1,24 +1,24 @@
 import React from 'react';
 
-import Footer from '../components/Footer';
 import Page from '../components/Page';
 import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 import Topics from '../components/Topics';
 
-import PROJECTS from '../data/projects';
+import TOPICS from '../data/projects';
 
-const ProjectsPage = () => (
+const TopicsPage = () => (
   <Page>
     <Landing
-      header={PROJECTS.header}
-      paragraph={PROJECTS.paragraph}
+      header={TOPICS.header}
+      paragraph={TOPICS.paragraph}
       hasBack={true}
     />
 
-    <Topics topics={PROJECTS.list} />
+    <Topics topics={TOPICS.list} />
 
     <Footer />
   </Page>
 );
 
-export default ProjectsPage;
+export default TopicsPage;
