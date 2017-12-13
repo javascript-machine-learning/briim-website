@@ -46,7 +46,7 @@ const IndexPage = ({ header, subheader }) => (
             Explore curated learning material for Machine Learning in JavaScript. Contribute to it yourself by providing useful resources.
           </p>
 
-          <ButtonButLink href={'/learn'}>
+          <ButtonButLink to={'/learn'}>
             LEarn
           </ButtonButLink>
         </Aside>
@@ -66,7 +66,7 @@ const IndexPage = ({ header, subheader }) => (
             Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
           </p>
 
-          <ButtonButLink href={'https://www.getrevue.co/profile/briim'}>
+          <ButtonButLink to={'https://www.getrevue.co/profile/briim'}>
             [WIP: Early 2018]
           </ButtonButLink>
         </Aside>
@@ -90,7 +90,7 @@ const IndexPage = ({ header, subheader }) => (
             Explore machine learning in JavaScript projects. Become curious and learn machine learning in JavaScript yourself.
           </p>
 
-          <ButtonButLink href={'/projects'}>
+          <ButtonButLink to={'/projects'}>
             Projects
           </ButtonButLink>
         </Aside>
@@ -111,9 +111,9 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
         <Aside>
           <ul>
-            <li>Join Newsletter for <Link href="https://www.getrevue.co/profile/briim">Updates</Link></li>
-            <li>Join Slack for <Link href="#slack">Discussions</Link></li>
-            <li>Join for <Link href="#github">Contributions</Link></li>
+            <li>Join Newsletter for <Link to="https://www.getrevue.co/profile/briim">Updates</Link></li>
+            <li>Join Slack for <Link to="#slack">Discussions</Link></li>
+            <li>Join for <Link to="#github">Contributions</Link></li>
           </ul>
         </Aside>
       </Section>

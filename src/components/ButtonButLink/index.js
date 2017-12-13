@@ -1,19 +1,10 @@
 import React, { Component } from 'react';
 import { buttonBase } from '../Button';
+import Link from '../Link';
 
 import styled from 'styled-components';
 
-const ButtonButLink = styled.a`
-  text-decoration: none;
-
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-
+const ButtonButLink = styled(Link)`
   ${buttonBase}
 `
 

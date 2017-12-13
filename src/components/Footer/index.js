@@ -14,7 +14,7 @@ const Footer = () =>
     <p>
       {config.footerLinks.map((link, i) =>
         <span key={i}>
-          <Link href={link.url}>
+          <Link to={link.url}>
             {link.label}
           </Link>
           {i + 1 < config.footerLinks.length ? <span> / </span> : null}

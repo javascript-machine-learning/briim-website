@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 
+import Link from '../Link';
 import config from '../../config';
 
 const NAVBAR_HEIGHT = 55;
@@ -49,7 +50,7 @@ const nonLandingLink = css`
   }
 `
 
-const NavbarLink = styled.a`
+const NavbarLink =  styled(({ isLanding, ...rest }) => <Link { ...rest } />)`
   font-size: 12px;
   letter-spacing: 3.5px;
   font-weight: 500;
@@ -77,26 +78,29 @@ class Navigation extends Component {
   componentDidMount() {
     this.setState(() => ({ windowHeight: window.innerHeight }));
 
-    window.addEventListener('scroll', (event) => {
-      const { windowHeight } = this.state;
-
-      if((window.scrollY + NAVBAR_HEIGHT) < windowHeight) {
-        this.setState(() => ({ isLanding: true }));
-      } else {
-        this.setState(() => ({ isLanding: false }));
-      }
-    });
-
-    window.addEventListener('resize', (event) => {
-      this.setState(() => ({
-        windowHeight: window.innerHeight,
-      }));
-    });
+    window.addEventListener('scroll', this.onScroll.bind(this));
+    window.addEventListener('resize', this.onResize.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventLister('scroll');
-    window.removeEventListener('resize');
+    window.removeEventListener('scroll', this.onScroll.bind(this));
+    window.removeEventListener('resize', this.onResize.bind(this));
+  }
+
+  onScroll = (event) => {
+    const { windowHeight } = this.state;
+
+    if((window.scrollY + NAVBAR_HEIGHT) < windowHeight) {
+      this.setState(() => ({ isLanding: true }));
+    } else {
+      this.setState(() => ({ isLanding: false }));
+    }
+  }
+
+  onResize = (event) => {
+    this.setState(() => ({
+      windowHeight: window.innerHeight,
+    }));
   }
 
   render() {
@@ -107,10 +111,10 @@ class Navigation extends Component {
       <header>
         <Navbar isLanding={isLanding}>
 
-          { hasBack && <NavbarLinkBack isLanding={isLanding} href={'/'}>back</NavbarLinkBack> }
+          { hasBack && <NavbarLinkBack isLanding={isLanding} to={'/'}>back</NavbarLinkBack> }
 
           {config.navigationLinks.map((link, i) =>
-            <NavbarLink key={i} isLanding={isLanding} href={link.url}>{link.label}</NavbarLink>
+            <NavbarLink key={i} isLanding={isLanding} to={link.url}>{link.label}</NavbarLink>
           )}
         </Navbar>
       </header>

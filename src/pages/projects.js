@@ -31,8 +31,8 @@ const ProjectsPage = () => (
         <Aside>
           <ul>
             <li>Popularity: {89}</li>
-            <li><Link href="https://www.getrevue.co/profile/briim">Source</Link></li>
-            <li><Link href="#slack">Demo</Link></li>
+            <li><Link to="https://www.getrevue.co/profile/briim">Source</Link></li>
+            <li><Link to="#slack">Demo</Link></li>
           </ul>
         </Aside>
       </Section>
