@@ -73,21 +73,24 @@ class Navigation extends Component {
       windowHeight: 0,
       isLanding: true,
     };
+
+    this.onScroll = this.onScroll.bind(this);
+    this.onResize = this.onResize.bind(this);
   }
 
   componentDidMount() {
     this.setState(() => ({ windowHeight: window.innerHeight }));
 
-    window.addEventListener('scroll', this.onScroll.bind(this));
-    window.addEventListener('resize', this.onResize.bind(this));
+    window.addEventListener('scroll', this.onScroll);
+    window.addEventListener('resize', this.onResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.onScroll.bind(this));
-    window.removeEventListener('resize', this.onResize.bind(this));
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
   }
 
-  onScroll = (event) => {
+  onScroll(event) {
     const { windowHeight } = this.state;
 
     if((window.scrollY + NAVBAR_HEIGHT) < windowHeight) {
@@ -97,7 +100,7 @@ class Navigation extends Component {
     }
   }
 
-  onResize = (event) => {
+  onResize(event) {
     this.setState(() => ({
       windowHeight: window.innerHeight,
     }));
