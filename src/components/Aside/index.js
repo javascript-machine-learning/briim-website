@@ -14,9 +14,12 @@ const Aside = styled.aside`
 `;
 
 const BorderedAside = Aside.extend`
-  border-color: #eaeaea;
+  ${({ direction }) => `border-${direction}: 1px solid #eaeaea;`}
 
-  ${({ direction }) => `border-${direction}: 1px solid;`}
+  ${({ direction }) => `@media (max-width: ${TABLET_SIZE}px) {
+    border-${direction}: 0px solid;
+    border-bottom: 1px solid #eaeaea;
+  }`}
 `
 
 export {
