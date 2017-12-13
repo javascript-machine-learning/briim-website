@@ -32,10 +32,15 @@ const CaptionSubheader = styled.h2`
   letter-spacing: 3.5px;
   font-weight: 500;
   text-transform: uppercase;
-  max-width: 400px;
 
   color: #ffffff;
   opacity: .35;
+`
+
+const CaptionParagraph = styled.p`
+  margin: 20px 0;
+  color: #ffffff;
+  max-width: 240px;
 `
 
 const BackgroundImage = FadeIn.extend`
@@ -60,12 +65,13 @@ const BackgroundImage = FadeIn.extend`
   }
 `
 
-const Landing = ({ header, subheader, hasBack }) =>
+const Landing = ({ header, subheader, paragraph, hasBack }) =>
   <BackgroundImage>
     <Navigation hasBack={hasBack} />
     <Caption>
       <CaptionHeader>{header}</CaptionHeader>
-      <CaptionSubheader>{subheader}</CaptionSubheader>
+      {subheader ? <CaptionSubheader>{subheader}</CaptionSubheader> : null}
+      {paragraph ? <CaptionParagraph>{paragraph}</CaptionParagraph> : null}
     </Caption>
   </BackgroundImage>
 

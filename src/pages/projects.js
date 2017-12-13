@@ -13,7 +13,7 @@ const ProjectsPage = () => (
   <Page>
     <Landing
       header={'Projects'}
-      subheader={'Exciting projects in Machine Learning with JavaScript to get you motivated to join the movement.'}
+      paragraph={'Exciting projects in Machine Learning with JavaScript to get you motivated to join the movement.'}
       hasBack={true}
     />
 

@@ -60,6 +60,10 @@ const NavbarLink = styled.a`
   ${({ isLanding }) => isLanding ? landingLink : nonLandingLink}
 `
 
+const NavbarLinkBack = NavbarLink.extend`
+  align-self: flex-start;
+`
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -97,10 +101,14 @@ class Navigation extends Component {
 
   render() {
     const { isLanding } = this.state;
+    const { hasBack } = this.props;
 
     return (
       <header>
         <Navbar isLanding={isLanding}>
+
+          { hasBack && <NavbarLinkBack isLanding={isLanding} href={'/'}>back</NavbarLinkBack> }
+
           {config.navigationLinks.map((link, i) =>
             <NavbarLink key={i} isLanding={isLanding} href={link.url}>{link.label}</NavbarLink>
           )}
