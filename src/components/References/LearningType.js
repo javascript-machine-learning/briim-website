@@ -6,7 +6,7 @@ const Uppercase = styled.span`
   text-transform: uppercase;
 `
 
-const ArticleType = ({ articleType }) =>
-  <span>Category: <Uppercase>{articleType}</Uppercase></span>
+const LearningType = ({ type }) =>
+  <span>Category: <Uppercase>{type}</Uppercase></span>
 
-export default ArticleType;
+export default LearningType;

@@ -91,7 +91,7 @@ const IndexPage = ({ header, subheader }) => (
             Visualize Algorithms in Motion
           </h3>
           <p>
-            Explore machine learning in JavaScript projects. Become curious and learn machine learning in JavaScript yourself.
+            Explore machine learning in JavaScript projects! Experience neural networks, support vector machines, and neuroevolution in your browser. Become curious and learn about machine learning in JavaScript too.
           </p>
 
           <ButtonButAnchor href={'/projects'}>
@@ -110,7 +110,7 @@ const IndexPage = ({ header, subheader }) => (
             Create a Movement
           </h3>
           <p>
-            Machine Learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web development and web developers as well. It's not an effort of an individual, but of a communtiy.
+            Machine Learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a communtiy.
           </p>
         </Aside>
         <Aside>

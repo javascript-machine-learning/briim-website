@@ -5,17 +5,17 @@ import Landing from '../components/Landing';
 import Footer from '../components/Footer';
 import Topics from '../components/Topics';
 
-import TOPICS from '../data/libraries';
+import { LIBRARIES } from '../data';
 
 const TopicsPage = () => (
   <Page>
     <Landing
-      header={TOPICS.header}
-      paragraph={TOPICS.paragraph}
+      header={LIBRARIES.header}
+      paragraph={LIBRARIES.paragraph}
       hasBack={true}
     />
 
-    <Topics topics={TOPICS.list} />
+    <Topics topics={LIBRARIES.list} />
 
     <Footer />
   </Page>

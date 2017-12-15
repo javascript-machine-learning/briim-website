@@ -1,13 +1,5 @@
 import React from 'react';
 
-import ArticleType from '../components/References/ArticleType';
-import ArticleLink from '../components/References/ArticleLink';
-
-const references = [
-  ({ values }) => <ArticleType articleType={values.articleType} />,
-  ({ values }) => <ArticleLink articleLink={values.articleLink} />,
-];
-
 const BLOG_LIST = [
   {
     title: `Learn Machine Learning. But in JavaScript.`,
@@ -16,7 +8,6 @@ const BLOG_LIST = [
       articleType: 'News',
       articleLink: 'foo-bar.bri.im/',
     },
-    references,
   },
   {
     title: `Learn Machine Learning. But in JavaScript.`,
@@ -25,14 +16,15 @@ const BLOG_LIST = [
       articleType: 'Tutorial',
       articleLink: 'foo-bar.bri.im/',
     },
-    references,
   },
 ];
 
-const BLOG = {
+const BLOG_MAIN = {
   header: 'Blog',
   paragraph: 'Insightful articles about Machine Learning in JavaScript to get you motivated joining the movement.',
-  list: BLOG_LIST,
 };
 
-export default BLOG;
+export {
+  BLOG_LIST,
+  BLOG_MAIN,
+};

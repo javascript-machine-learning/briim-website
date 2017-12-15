@@ -5,17 +5,17 @@ import Landing from '../components/Landing';
 import Footer from '../components/Footer';
 import Topics from '../components/Topics';
 
-import TOPICS from '../data/learn';
+import { LEARN } from '../data';
 
 const TopicsPage = () => (
   <Page>
     <Landing
-      header={TOPICS.header}
-      paragraph={TOPICS.paragraph}
+      header={LEARN.header}
+      paragraph={LEARN.paragraph}
       hasBack={true}
     />
 
-    <Topics topics={TOPICS.list} />
+    <Topics topics={LEARN.list} />
 
     <Footer />
   </Page>

@@ -1,13 +1,5 @@
 import React from 'react';
 
-import Power from '../components/References/Power';
-import LibraryLink from '../components/References/LibraryLink';
-
-const references = [
-  ({ values }) => <Power power={values.power} />,
-  ({ values }) => <LibraryLink library={values.library} />,
-];
-
 const LIBRARIES_LIST = [
   {
     title: `Math.js`,
@@ -16,7 +8,6 @@ const LIBRARIES_LIST = [
       power: 'Linear Algebra, Statistics, Calculus',
       library: 'http://mathjs.org/',
     },
-    references,
   },
   {
     title: `D3.js`,
@@ -25,7 +16,6 @@ const LIBRARIES_LIST = [
       power: 'Visualizations',
       library: 'https://d3js.org/',
     },
-    references,
   },
   {
     title: `Natural`,
@@ -34,7 +24,14 @@ const LIBRARIES_LIST = [
       power: 'Natural Language Processing',
       library: 'https://github.com/NaturalNode/natural',
     },
-    references,
+  },
+  {
+    title: `OpenCV.js`,
+    description: `OpenCV library for functions mainly aimed at real-time computer vision. OpenCV.js is a JavaScript binding that exposes OpenCV library to the web.`,
+    values: {
+      power: 'Computer Vision',
+      library: 'https://github.com/ucisysarch/opencvjs',
+    },
   },
   {
     title: `Pavlov.js`,
@@ -43,7 +40,6 @@ const LIBRARIES_LIST = [
       power: 'Markov Decision Processes',
       library: 'https://github.com/NathanEpstein/Pavlov.js',
     },
-    references,
   },
   {
     title: `SVM.js`,
@@ -52,7 +48,6 @@ const LIBRARIES_LIST = [
       power: 'SVM',
       library: 'https://github.com/karpathy/svmjs',
     },
-    references,
   },
   {
     title: `Brain.js`,
@@ -61,7 +56,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks',
       library: 'https://github.com/BrainJS/brain.js',
     },
-    references,
   },
   {
     title: `Synaptic`,
@@ -70,7 +64,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks',
       library: 'https://github.com/cazala/synaptic',
     },
-    references,
   },
   {
     title: `Neataptic`,
@@ -79,7 +72,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks, Neuroevolution',
       library: 'https://github.com/wagenaartje/neataptic',
     },
-    references,
   },
   {
     title: `Deeplearn.js`,
@@ -88,7 +80,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks, WebGL',
       library: 'https://deeplearnjs.org/',
     },
-    references,
   },
   {
     title: `WebDNN`,
@@ -97,7 +88,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks, Only Inference Mode, WebGL',
       library: 'https://github.com/mil-tokyo/webdnn',
     },
-    references,
   },
   {
     title: `Keras.js`,
@@ -106,7 +96,6 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks, Only Inference Mode, WebGL',
       library: 'https://github.com/transcranial/keras-js',
     },
-    references,
   },
   {
     title: `TensorFire`,
@@ -115,14 +104,15 @@ const LIBRARIES_LIST = [
       power: 'Neural Networks, Inference Mode, WebGL',
       library: 'https://tenso.rs/',
     },
-    references,
   },
 ];
 
-const LIBRARIES = {
+const LIBRARIES_MAIN = {
   header: 'Libraries',
   paragraph: 'Powerful libraries for applied machine learning in JavaScript. There is no need to implement algorithms from scratch.',
-  list: LIBRARIES_LIST,
 };
 
-export default LIBRARIES;
+export {
+  LIBRARIES_LIST,
+  LIBRARIES_MAIN,
+};

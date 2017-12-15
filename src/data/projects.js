@@ -1,14 +1,5 @@
 import React from 'react';
 
-// import Popularity from '../components/References/Popularity';
-import DemoLink from '../components/References/DemoLink';
-import SourceLink from '../components/References/SourceLink';
-
-const references = [
-  ({ values }) => <DemoLink demo={values.demo} />,
-  ({ values }) => <SourceLink source={values.source} />,
-];
-
 const PROJECTS_LIST = [
   {
     title: `MNIST Digit Recognition Neural Network with Deeplearn.js`,
@@ -17,7 +8,6 @@ const PROJECTS_LIST = [
       demo: 'https://mnist-neural-network-deeplearnjs.bri.im/',
       source: 'https://github.com/javascript-machine-learning/mnist-neural-network-deeplearnjs',
     },
-    references,
   },
   {
     title: `Agar.io-AI - Agar.io with Neuroevolution`,
@@ -26,7 +16,6 @@ const PROJECTS_LIST = [
       demo: 'https://wagenaartje.github.io/neataptic/articles/agario/',
       source: 'https://github.com/wagenaartje/agario-ai',
     },
-    references,
   },
   {
     title: `Web Accessibility Neural Network with Deeplearn.js`,
@@ -35,7 +24,6 @@ const PROJECTS_LIST = [
       demo: 'https://color-accessibility-neural-network-deeplearnjs.bri.im/',
       source: 'https://github.com/javascript-machine-learning/color-accessibility-neural-network-deeplearnjs',
     },
-    references,
   },
   {
     title: `Fast Neural Style Transfer with Deeplearn.js`,
@@ -44,7 +32,6 @@ const PROJECTS_LIST = [
       demo: 'https://reiinakano.github.io/fast-style-transfer-deeplearnjs',
       source: 'https://github.com/reiinakano/fast-style-transfer-deeplearnjs',
     },
-    references,
   },
   {
     title: `FlappyLearning - FlappyBird with Neuroevolution`,
@@ -53,14 +40,15 @@ const PROJECTS_LIST = [
       demo: 'https://xviniette.github.io/FlappyLearning/',
       source: 'https://github.com/xviniette/FlappyLearning',
     },
-    references,
   },
 ];
 
-const PROJECTS = {
+const PROJECTS_MAIN = {
   header: 'Projects',
   paragraph: 'Insightful projects taken from Machine Learning in JavaScript to get you motivated joining the movement.',
-  list: PROJECTS_LIST,
 };
 
-export default PROJECTS;
+export {
+  PROJECTS_LIST,
+  PROJECTS_MAIN,
+};
