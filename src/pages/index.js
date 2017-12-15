@@ -5,7 +5,7 @@ import Page from '../components/Page';
 import Landing from '../components/Landing';
 import Section from '../components/Section';
 import Aside from '../components/Aside';
-import TextCenter from '../components/TextCenter';
+import Caption from '../components/Caption';
 import Button from '../components/Button';
 import { Anchor } from '../components/Link';
 import { ImageFadeIn } from '../components/Image';
@@ -33,7 +33,7 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
         <Aside>
           <ImageFadeIn src={neuralStyleTransfer} alt="neural-style-transfer" />
-          <TextCenter><p>Neural Style Transfer</p></TextCenter>
+          <Caption>Neural Style Transfer</Caption>
         </Aside>
       </Section>
 
@@ -100,7 +100,7 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
         <Aside>
           <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
-          <TextCenter><p>MNIST Digit Recognition</p></TextCenter>
+          <Caption>MNIST Digit Recognition</Caption>
         </Aside>
       </Section>
 

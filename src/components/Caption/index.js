@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TextCenter = styled.div`
+const Caption = styled.p`
   text-align: center;
 `
 
-export default TextCenter;
+export default Caption;
