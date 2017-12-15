@@ -11,14 +11,14 @@ const EditOnGithub = styled.p`
   text-transform: uppercase;
 `
 
-const Topics = ({ topics }) =>
+const Topics = ({ topics, isEditable }) =>
   <div>
     <div>
       {topics.map((project, i) =>
         <Topic key={i} project={project} />
       )}
     </div>
-    <EditOnGithub><Anchor href="https://github.com/javascript-machine-learning/briim-website-content">Edit this page on GitHub</Anchor></EditOnGithub>
+    {isEditable && <EditOnGithub><Anchor href="https://github.com/javascript-machine-learning/briim-website-content">Edit this page on GitHub</Anchor></EditOnGithub>}
   </div>
 
 const Topic = ({ project }) =>

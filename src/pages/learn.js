@@ -15,7 +15,7 @@ const TopicsPage = () => (
       hasBack={true}
     />
 
-    <Topics topics={LEARN.list} />
+    <Topics topics={LEARN.list} isEditable={false} />
 
     <Footer />
   </Page>
