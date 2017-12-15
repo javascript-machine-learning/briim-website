@@ -13,7 +13,7 @@ import { TABLET_SIZE, MOBILE_SIZE } from '../../constants/media';
 
 const Section = styled.section`
   display: flex;
-  padding: 80px 150px;
+  padding: 60px 150px;
 
   &:nth-child(odd) {
     background: #ffffff;

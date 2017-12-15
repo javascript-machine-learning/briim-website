@@ -60,24 +60,28 @@ const IndexPage = ({ header, subheader }) => (
       <Section isAlternating={true}>
         <Aside>
           <h3>
-            Take the JavaScript in ML Course
+            Become Productive
           </h3>
           <p>
-            Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
+            Work with machine learning in JavaScript libraries to become efficient and productive. The recent ones are running with WebGL in the browser to give your algorithms the required power.
+          </p>
+
+          <ButtonButAnchor href={'/libraries'}>
+            Libraries
+          </ButtonButAnchor>
+        </Aside>
+
+        <Aside>
+          <h3>
+            Probe Yourself
+          </h3>
+          <p>
+            Challenges are waiting for you at the interactive machine learning in JavaScript playground. Exercise your skills on a recurring basis in applied machine learning in JavaScript.
           </p>
 
           <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
-            [WIP: Early 2018]
+            [WIP: 2018]
           </ButtonButAnchor>
-        </Aside>
-        <Aside>
-          <ul>
-            <li>Train neural networks in the browser</li>
-            <li>Apply SVM, K-Means and PCA</li>
-            <li>Implement shallow algorithms</li>
-            <li>Build a recommender system</li>
-            <li>Dive into subfields of AI (e.g. NLP)</li>
-          </ul>
         </Aside>
       </Section>
 
@@ -103,7 +107,7 @@ const IndexPage = ({ header, subheader }) => (
       <Section isAlternating={true}>
         <Aside>
           <h3>
-            Create a Movement.
+            Create a Movement
           </h3>
           <p>
             Machine Learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web development and web developers as well. It's not an effort of an individual, but of a communtiy.
@@ -112,8 +116,8 @@ const IndexPage = ({ header, subheader }) => (
         <Aside>
           <ul>
             <li>Join Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
-            <li>Join Slack for <Anchor href="#slack">Discussions</Anchor></li>
-            <li>Join for <Anchor href="#github">Contributions</Anchor></li>
+            <li>Join Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
+            <li>Join for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
           </ul>
         </Aside>
       </Section>

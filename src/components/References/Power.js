@@ -5,7 +5,7 @@ const Uppercase = styled.span`
   text-transform: uppercase;
 `
 
-const Level = ({ level }) =>
-  <span>Level: <Uppercase>{level}</Uppercase></span>
+const Power = ({ power }) =>
+  <span>Power: <Uppercase>{power}</Uppercase></span>
 
-export default Level;
+export default Power;

@@ -3,6 +3,11 @@ import React from 'react';
 import ArticleType from '../components/References/ArticleType';
 import ArticleLink from '../components/References/ArticleLink';
 
+const references = [
+  ({ values }) => <ArticleType articleType={values.articleType} />,
+  ({ values }) => <ArticleLink articleLink={values.articleLink} />,
+];
+
 const BLOG_LIST = [
   {
     title: `Learn Machine Learning. But in JavaScript.`,
@@ -11,10 +16,7 @@ const BLOG_LIST = [
       articleType: 'News',
       articleLink: 'foo-bar.bri.im/',
     },
-    references: [
-      ({ values }) => <ArticleType articleType={values.articleType} />,
-      ({ values }) => <ArticleLink articleLink={values.articleLink} />,
-    ],
+    references,
   },
   {
     title: `Learn Machine Learning. But in JavaScript.`,
@@ -23,10 +25,7 @@ const BLOG_LIST = [
       articleType: 'Tutorial',
       articleLink: 'foo-bar.bri.im/',
     },
-    references: [
-      ({ values }) => <ArticleType articleType={values.articleType} />,
-      ({ values }) => <ArticleLink articleLink={values.articleLink} />,
-    ],
+    references,
   },
 ];
 
