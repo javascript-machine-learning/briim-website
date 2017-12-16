@@ -26,12 +26,19 @@ export const LIBRARIES_LIST = [
     },
   },
   {
-    title: `OpenCV.js`,
-    description: `OpenCV library for functions mainly aimed at real-time computer vision. OpenCV.js is a JavaScript binding that exposes OpenCV library to the web.`,
+    title: `OpenCV.js (OpenCV)`,
+    description: `OpenCV library for functions mainly aimed at real-time computer vision for your Browser. OpenCV.js is a JavaScript binding that exposes OpenCV library to the web.`,
     values: {
       power: 'Computer Vision',
       library: 'https://github.com/ucisysarch/opencvjs',
-      // library: 'https://github.com/justadudewhohacks/opencv4nodejs',
+    },
+  },
+  {
+    title: `opencv4nodejs (OpenCV)`,
+    description: `opencv4nodejs library is used for computer vision in Node.js. opencv4nodejs is a wrapper library which allows you to use the native C++ library via a JavaScript API in Node.js.`,
+    values: {
+      power: 'Computer Vision',
+      library: 'https://github.com/justadudewhohacks/opencv4nodejs',
     },
   },
   {
