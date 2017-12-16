@@ -29,7 +29,7 @@ module.exports = class HTML extends React.Component {
           {/* General tags */}
           <meta name="title" content={config.title} />
           <meta name="description" content={config.description} />
-          <meta name="image" content={config.image} />
+          <meta name="image" content={config.url + config.image} />
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -39,7 +39,7 @@ module.exports = class HTML extends React.Component {
           <meta property="og:type" content="website" />
           <meta property="og:title" content={config.title} />
           <meta property="og:description" content={config.description} />
-          <meta property="og:image" content={config.image} />
+          <meta property="og:image" content={config.url + config.image} />
 
           {/* Twitter Card tags */}
           <meta name="twitter:card" content="summary_large_image" />
@@ -49,8 +49,8 @@ module.exports = class HTML extends React.Component {
           />
           <meta name="twitter:title" content={config.title} />
           <meta name="twitter:description" content={config.description} />
-          <meta name="twitter:image" content={config.image} />
-
+          <meta name="twitter:image:src" content={config.url + config.image} />
+          <meta name="twitter:image:alt" content={config.title} />
 
 
           {this.props.headComponents}
