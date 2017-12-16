@@ -1,9 +1,9 @@
-import banner from './assets/banner.jpg';
+import card from './assets/card.jpg';
 
 module.exports = {
   title: 'BRIIM',
   description: 'A Machine Learning in JavaScript Movement',
-  image: banner,
+  image: card,
   userTwitter: 'rwieruch',
   url: 'https://bri.im',
   navigationLinks: [
