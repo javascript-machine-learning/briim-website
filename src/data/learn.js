@@ -51,7 +51,7 @@ export const LEARN_LIST = [
   },
   {
     title: `Calculus, Linear Algebra & Statistics`,
-    description: <span>Machine Learning builds up on lots of foundational mathmatical knowledge. Do you need a refresher on math? Explore the courses on Khan Academy to learn about <Anchor href="https://www.khanacademy.org/math/calculus-home">calculus</Anchor>, <Anchor href="https://www.khanacademy.org/math/linear-algebra">linear algebra</Anchor>, and <Anchor href="https://www.khanacademy.org/math/statistics-probability">statistics</Anchor>.</span>,
+    description: <span>Machine learning builds up on lots of foundational mathematical knowledge. Do you need a refresher on math? Explore the courses on Khan Academy to learn about <Anchor href="https://www.khanacademy.org/math/calculus-home">calculus</Anchor>, <Anchor href="https://www.khanacademy.org/math/linear-algebra">linear algebra</Anchor>, and <Anchor href="https://www.khanacademy.org/math/statistics-probability">statistics</Anchor>.</span>,
     values: {
       level: 'Starting',
       type: TYPES.handsOn,
@@ -82,7 +82,7 @@ export const LEARN_LIST = [
   },
   {
     title: `Deep Learning Specialization`,
-    description: `A perfect succesor for the Machine Learning by Andrew Ng course. In five courses, you will learn the foundations of Deep Learning, understand how to build neural networks, and learn how to lead successful machine learning projects. You will practice all these ideas in Python and in TensorFlow, which we will teach.`,
+    description: `A perfect successor for the machine learning by Andrew Ng course. In five courses, you will learn the foundations of Deep Learning, understand how to build neural networks, and learn how to lead successful machine learning projects. You will practice all these ideas in Python and in TensorFlow, which we will teach.`,
     values: {
       level: 'Advanced',
       type: TYPES.handsOn,
@@ -112,7 +112,7 @@ export const LEARN_LIST = [
   },
   {
     title: `Additional Machine Learning Books`,
-    description: `A broad list of machine learnign books curated by the community. These will give you all you need to go into every additional corner of machine learning.`,
+    description: `A broad list of machine learning books curated by the community. These will give you all you need to go into every additional corner of machine learning.`,
     values: {
       level: 'Advanced',
       type: TYPES.text,

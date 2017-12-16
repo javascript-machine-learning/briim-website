@@ -17,7 +17,7 @@ import mnistNeuralNetwork from '../assets/mnist-neural-network.jpg';
 const IndexPage = ({ header, subheader }) => (
   <Page>
     <Landing
-      header={'Briim'}
+      header={'BRIIM'}
       subheader={'A Machine Learning in JavaScript Movement'}
     />
 
@@ -43,7 +43,7 @@ const IndexPage = ({ header, subheader }) => (
             Dig into the Learning Material
           </h3>
           <p>
-            Explore curated learning material for Machine Learning in JavaScript. Contribute to it yourself by providing useful resources.
+            Explore curated learning material for machine learning in JavaScript. Contribute to it yourself by providing useful resources.
           </p>
 
           <ButtonButAnchor href={'/learn'}>
@@ -110,14 +110,14 @@ const IndexPage = ({ header, subheader }) => (
             Create a Movement
           </h3>
           <p>
-            Machine Learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a communtiy.
+            Machine learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a community.
           </p>
         </Aside>
         <Aside>
           <ul>
-            <li>Join Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
-            <li>Join Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
-            <li>Join for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
+            <li>Join our Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
+            <li>Join our Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
+            <li>Join us for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
           </ul>
         </Aside>
       </Section>
