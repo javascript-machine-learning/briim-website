@@ -124,5 +124,5 @@ export const LEARN_LIST = [
 
 export const LEARN_MAIN = {
   header: 'Learn',
-  paragraph: 'Handpicked material to get you started as web developer or JavaScript enthusiast in machine learning.',
+  paragraph: 'Handpicked roadmap of material to get you started as web developer or JavaScript enthusiast in machine learning.',
 };

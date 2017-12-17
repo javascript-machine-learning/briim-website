@@ -63,7 +63,7 @@ const IndexPage = ({ header, subheader }) => (
             Take the JavaScript in ML Course
           </h3>
           <p>
-            Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
+            Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Simply broaden your horizon or take a leap into this professional field.
           </p>
 
           <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
@@ -75,11 +75,10 @@ const IndexPage = ({ header, subheader }) => (
 
           </h3>
           <ul>
-            <li>Train neural networks in the browser</li>
-            <li>Apply SVM, K-Means and PCA</li>
-            <li>Implement shallow algorithms</li>
-            <li>Build a recommender system</li>
-            <li>Dive into subfields of AI (e.g. NLP)</li>
+            <li>Train Deep Neural Networks in the Browser</li>
+            <li>Apply SVM, K-Means and PCA to your Data</li>
+            <li>Implement Shallow Algorithms from Scratch</li>
+            <li>Dive into various subfields of AI (<Anchor href="https://en.wikipedia.org/wiki/Neuro-linguistic_programming">NLP</Anchor>, <Anchor href="https://en.wikipedia.org/wiki/Computer_vision">CV</Anchor>)</li>
           </ul>
         </Aside>
       </Section>
@@ -87,28 +86,19 @@ const IndexPage = ({ header, subheader }) => (
       <Section isAlternating={true}>
         <Aside>
           <h3>
-            Become Productive
+            Visualize Algorithms in Motion
           </h3>
           <p>
-            Work with machine learning in JavaScript libraries to become efficient and productive. The recent ones are running with WebGL in the browser to give your algorithms the required power.
+            Explore machine learning in JavaScript projects! Experience neural networks, support vector machines, and neuroevolution in your browser. Become curious and learn about machine learning in JavaScript too.
           </p>
 
-          <ButtonButAnchor href={'/libraries'}>
-            Libraries
+          <ButtonButAnchor href={'/projects'}>
+            Projects
           </ButtonButAnchor>
         </Aside>
-
         <Aside>
-          <h3>
-            Probe Yourself
-          </h3>
-          <p>
-            Challenges are waiting for you at the interactive machine learning in JavaScript playground. Exercise your skills on a recurring basis in applied machine learning in JavaScript.
-          </p>
-
-          <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
-            [WIP: 2018]
-          </ButtonButAnchor>
+          <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
+          <Caption>MNIST Digit Recognition</Caption>
         </Aside>
       </Section>
 
@@ -133,19 +123,28 @@ const IndexPage = ({ header, subheader }) => (
       <Section isAlternating={true}>
         <Aside>
           <h3>
-            Visualize Algorithms in Motion
+            Prove Yourself
           </h3>
           <p>
-            Explore machine learning in JavaScript projects! Experience neural networks, support vector machines, and neuroevolution in your browser. Become curious and learn about machine learning in JavaScript too.
+            Challenges are waiting for you at the interactive machine learning in JavaScript playground. Exercise your skills on a recurring basis in applied machine learning in JavaScript.
           </p>
 
-          <ButtonButAnchor href={'/projects'}>
-            Projects
+          <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
+            [WIP: 2018]
           </ButtonButAnchor>
         </Aside>
+
         <Aside>
-          <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
-          <Caption>MNIST Digit Recognition</Caption>
+          <h3>
+            Become Productive with Libraries
+          </h3>
+          <p>
+            Work with machine learning in JavaScript libraries to become efficient and productive. The recent ones are running with WebGL in the browser to give your algorithms the required power.
+          </p>
+
+          <ButtonButAnchor href={'/libraries'}>
+            Libraries
+          </ButtonButAnchor>
         </Aside>
       </Section>
     </div>

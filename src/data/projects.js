@@ -45,5 +45,5 @@ export const PROJECTS_LIST = [
 
 export const PROJECTS_MAIN = {
   header: 'Projects',
-  paragraph: 'Inspiring projects taken from machine learning in JavaScript to spark your interest to join the movement.',
+  paragraph: 'Inspiring projects taken from machine learning in JavaScript sparking your interest to join the movement.',
 };
