@@ -20,7 +20,7 @@ export const LEARN_LIST = [
     },
   },
   {
-    title: `Machine Learning 101`,
+    title: `Machine Learning 101 Presentation`,
     description: `A slide deck to give you an introduction to the field of machine learning. It touches all different parts to give you an good grasp of the subject.`,
     values: {
       level: 'Motivation',
@@ -30,7 +30,7 @@ export const LEARN_LIST = [
     },
   },
   {
-    title: `Machine Learning Guide`,
+    title: `Machine Learning Guide Podcast`,
     description: `A podcast series that aims to teach you the high level fundamentals of machine learning. It teaches the basic intuition, algorithms, and math. Where other learning resources will provide you the machine learning trees, the podcast provides the forest.`,
     values: {
       level: 'Motivation / Starting',
@@ -40,7 +40,7 @@ export const LEARN_LIST = [
     },
   },
   {
-    title: `Machine Learning by Andrew Ng`,
+    title: `Machine Learning by Andrew Ng Course`,
     description: `The course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks), unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning) and most important best practices in machine learning.`,
     values: {
       level: 'Starting',

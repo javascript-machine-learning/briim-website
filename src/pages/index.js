@@ -13,6 +13,7 @@ import { ButtonButAnchor } from '../components/Button';
 
 import neuralStyleTransfer from '../assets/neural-style-transfer.jpg';
 import mnistNeuralNetwork from '../assets/mnist-neural-network.jpg';
+import machineLearningHierarchy from '../assets/machine-learning-hierarchy.jpg';
 
 const IndexPage = ({ header, subheader }) => (
   <Page>
@@ -28,7 +29,7 @@ const IndexPage = ({ header, subheader }) => (
             Learn Machine Learning. But in JavaScript.
           </h3>
           <p>
-            Learn about artificial intelligence and data science, two fields which are governed by machine learning, in JavaScript. Take it right to your browser with WebGL. BRIIM is a movement to enable JavaScript enthusiasts and web developers in machine learning.
+            BRIIM is a movement to enable JavaScript enthusiasts and web developers in machine learning. Learn about artificial intelligence and data science, two fields which are governed by machine learning, in JavaScript. Take it right to your browser with WebGL.
           </p>
         </Aside>
         <Aside>
@@ -43,7 +44,7 @@ const IndexPage = ({ header, subheader }) => (
             Dig into the Learning Material
           </h3>
           <p>
-            Explore curated learning material for machine learning in JavaScript. Contribute to it yourself by providing useful resources.
+            Explore well curated and handpicked learning material for machine learning in JavaScript. Not all of the material is in JavaScript, but it should give you the required tools to translate it to JavaScript.  Contribute to it yourself by providing useful resources.
           </p>
 
           <ButtonButAnchor href={'/learn'}>
@@ -52,7 +53,8 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
         <Aside>
           <p>
-            Screenshot
+            <ImageFadeIn src={machineLearningHierarchy} alt="machine-learning-hierarchy" />
+            <Caption>Machine Learning Hierarchy Excerpt</Caption>
           </p>
         </Aside>
       </Section>

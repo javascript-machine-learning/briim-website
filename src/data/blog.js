@@ -12,8 +12,8 @@ const ARTICLE_TYPES = {
 // Recent Last, Oldest First
 export const BLOG_LIST = [
   {
-    title: `Shallow Machine Learning Algorithms in JavaScript`,
-    description: `This tutorial series teaches you several shallow machine learning algorithms and how to implement them.`,
+    title: `Machine Learning Algorithms in JavaScript`,
+    description: `This tutorial series teaches you several shallow machine learning algorithms (Naive Bayes classifier, k-means clustering, k-nearest-neighbor) and how to implement them.`,
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'http://burakkanber.com/blog/machine-learning-in-other-languages-introduction/',
