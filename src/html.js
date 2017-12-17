@@ -27,7 +27,7 @@ module.exports = class HTML extends React.Component {
 
 
           {/* General tags */}
-          <meta name="title" content={config.title} />
+          <title>{config.title}<title />
           <meta name="description" content={config.description} />
           <meta name="image" content={config.url + config.image} />
           <meta charSet="utf-8" />
