@@ -17,7 +17,7 @@ const Footer = () =>
         <Anchor href={link.url}>
           {link.label}
         </Anchor>
-        {i + 1 < config.footerLinks.length ? <span>&nbsp;/&nbsp;</span> : null}
+        {i + 1 < config.footerLinks.length ? <span>&nbsp;|&nbsp;</span> : null}
       </span>
     )}
   </FooterContainer>
