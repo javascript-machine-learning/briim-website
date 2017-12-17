@@ -59,6 +59,33 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
       </Section>
 
+      <Section>
+        <Aside>
+          <h3>
+            Take the JavaScript in ML Course
+          </h3>
+          <p>
+            Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Broaded your horizon or take a leap into another professsional field.
+          </p>
+
+          <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
+            [WIP: 2018]
+          </ButtonButAnchor>
+        </Aside>
+        <Aside>
+          <h3>
+
+          </h3>
+          <ul>
+            <li>Train neural networks in the browser</li>
+            <li>Apply SVM, K-Means and PCA</li>
+            <li>Implement shallow algorithms</li>
+            <li>Build a recommender system</li>
+            <li>Dive into subfields of AI (e.g. NLP)</li>
+          </ul>
+        </Aside>
+      </Section>
+
       <Section isAlternating={true}>
         <Aside>
           <h3>
@@ -90,6 +117,24 @@ const IndexPage = ({ header, subheader }) => (
       <Section isAlternating={true}>
         <Aside>
           <h3>
+            Create a Movement
+          </h3>
+          <p>
+            Machine learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a community.
+          </p>
+        </Aside>
+        <Aside>
+          <ul>
+            <li>Join our Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
+            <li>Join our Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
+            <li>Join us for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
+          </ul>
+        </Aside>
+      </Section>
+
+      <Section isAlternating={true}>
+        <Aside>
+          <h3>
             Visualize Algorithms in Motion
           </h3>
           <p>
@@ -103,24 +148,6 @@ const IndexPage = ({ header, subheader }) => (
         <Aside>
           <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
           <Caption>MNIST Digit Recognition</Caption>
-        </Aside>
-      </Section>
-
-      <Section isAlternating={true}>
-        <Aside>
-          <h3>
-            Create a Movement
-          </h3>
-          <p>
-            Machine learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a community.
-          </p>
-        </Aside>
-        <Aside>
-          <ul>
-            <li>Join our Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
-            <li>Join our Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
-            <li>Join us for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
-          </ul>
         </Aside>
       </Section>
     </div>
