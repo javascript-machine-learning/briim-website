@@ -20,6 +20,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: 'https://28ded14b3083446ea38ffb62b5caf958@sentry.io/260428',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "gatsby-movement",
