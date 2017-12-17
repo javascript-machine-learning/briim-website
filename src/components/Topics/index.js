@@ -6,6 +6,7 @@ import Aside, { BorderedAside } from '../Aside';
 import { Anchor } from '../Link';
 
 const EditOnGithub = styled.p`
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   text-transform: uppercase;

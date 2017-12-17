@@ -78,7 +78,7 @@ const IndexPage = ({ header, subheader }) => (
             <li>Train Deep Neural Networks in the Browser</li>
             <li>Apply SVM, K-Means and PCA to your Data</li>
             <li>Implement Shallow Algorithms from Scratch</li>
-            <li>Dive into various subfields of AI (<Anchor href="https://en.wikipedia.org/wiki/Neuro-linguistic_programming">NLP</Anchor>, <Anchor href="https://en.wikipedia.org/wiki/Computer_vision">CV</Anchor>)</li>
+            <li>Dive into various subfields of AI (<Anchor href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</Anchor>, <Anchor href="https://en.wikipedia.org/wiki/Computer_vision">CV</Anchor>)</li>
           </ul>
         </Aside>
       </Section>
