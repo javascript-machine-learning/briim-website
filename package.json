@@ -28,8 +28,8 @@
   "license": "",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "prestart": "gatsby build",
+    "build": "gatsby build --prefix-paths",
+    "prestart": "gatsby build --prefix-paths",
     "start": "node app.js",
     "develop": "gatsby develop",
     "format": "prettier es5 --single-quote --write 'src/**/*.js'",

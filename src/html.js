@@ -1,4 +1,6 @@
 import React from 'react';
+import { withPrefix } from 'gatsby-link'
+
 import config from './config';
 
 let stylesStr
@@ -25,7 +27,6 @@ module.exports = class HTML extends React.Component {
       <html {...this.props.htmlAttributes} style={{ height: '100%' }}>
         <head>
 
-
           {/* General tags */}
           <title>{config.title}</title>
           <meta name="description" content={config.description} />
@@ -33,6 +34,11 @@ module.exports = class HTML extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+          <link rel="apple-touch-icon" sizes="180x180" href={`${__PATH_PREFIX__}/favicons/apple-touch-icon.png`} />
+          <link rel="icon" type="image/png" sizes="32x32" href={`${__PATH_PREFIX__}/favicons/favicon-32x32.png`} />
+          <link rel="icon" type="image/png" sizes="16x16" href={`${__PATH_PREFIX__}/favicons/favicon-16x16.png`} />
+          <link rel="shortcut icon" href={`${__PATH_PREFIX__}/favicons/favicon.ico`} />
 
           {/* OpenGraph tags */}
           <meta property="og:url" content={config.url} />
