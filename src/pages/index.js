@@ -52,10 +52,8 @@ const IndexPage = ({ header, subheader }) => (
           </ButtonButAnchor>
         </Aside>
         <Aside>
-          <p>
-            <ImageFadeIn src={machineLearningHierarchy} alt="machine-learning-hierarchy" />
-            <Caption>Machine Learning Hierarchy Excerpt</Caption>
-          </p>
+          <ImageFadeIn src={machineLearningHierarchy} alt="machine-learning-hierarchy" />
+          <Caption>Machine Learning Hierarchy Excerpt</Caption>
         </Aside>
       </Section>
 
