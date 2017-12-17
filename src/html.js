@@ -1,5 +1,6 @@
 import React from 'react';
 import config from './config';
+import { withPrefix } from 'gatsby-link';
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -25,9 +26,14 @@ module.exports = class HTML extends React.Component {
       <html {...this.props.htmlAttributes} style={{ height: '100%' }}>
         <head>
 
+          {/* Favicon */}
+          <link rel="apple-touch-icon" sizes="180x180" href={`${__PATH_PREFIX__}/favicons/apple-touch-icon.png`}} />
+          <link rel="icon" type="image/png" sizes="32x32" href={`${__PATH_PREFIX__}/favicons/favicon-32x32.png`}} />
+          <link rel="icon" type="image/png" sizes="16x16" href={`${__PATH_PREFIX__}/favicons/favicon-16x16.png`}} />
+          <link rel="shortcut icon" href={`${__PATH_PREFIX__}/favicons/favicon.ico`}} />
 
           {/* General tags */}
-          <title>{config.title}<title />
+          <title>{config.title}</title>
           <meta name="description" content={config.description} />
           <meta name="image" content={config.url + config.image} />
           <meta charSet="utf-8" />

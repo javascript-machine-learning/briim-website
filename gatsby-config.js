@@ -1,9 +1,10 @@
 const GOOGLE_ANALYTICS_TRACKING_ID = 'UA-65599459-9';
 
 module.exports = {
+  pathPrefix: '/',
   siteMetadata: {
-    title: 'BRIIM',
-    description: 'A Machine Learning in JavaScript Movement',
+    title: 'BRIIM - A Machine Learning in JavaScript Movement',
+    description: 'BRIIM is a movement to enable JavaScript enthusiasts and web developers in machine learning. Learn about artificial intelligence and data science, two fields which are governed by machine learning, in JavaScript. Take it right to your browser with WebGL.',
   },
   plugins: [
     {
