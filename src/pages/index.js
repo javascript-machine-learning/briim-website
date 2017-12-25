@@ -89,7 +89,7 @@ const IndexPage = ({ header, subheader }) => (
             Visualize Algorithms in Motion
           </h3>
           <p>
-            Explore machine learning in JavaScript projects! Experience neural networks, support vector machines, and neuroevolution in your browser. Become curious and learn about machine learning in JavaScript too.
+            Explore machine learning in JavaScript projects. Experience neural networks, support vector machines, and neuroevolution in your browser. Get to know how recommender systems can be built in your favorite language. Become curious and learn about machine learning in JavaScript too.
           </p>
 
           <ButtonButAnchor href={'/projects'}>
