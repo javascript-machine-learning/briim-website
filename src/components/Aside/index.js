@@ -10,6 +10,7 @@ const Aside = styled.aside`
 
   @media (max-width: ${TABLET_SIZE}px) {
     text-align: center;
+    margin: 20px 0;
   }
 `;
 

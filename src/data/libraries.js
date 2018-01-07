@@ -26,6 +26,14 @@ export const LIBRARIES_LIST = [
     },
   },
   {
+    title: `Sentiment`,
+    description: `Sentiment is a Node.js module that uses the AFINN-165 wordlist and Emoji Sentiment Ranking to perform sentiment analysis on arbitrary blocks of input text.`,
+    values: {
+      power: 'Sentiment Analysis',
+      library: 'https://github.com/thisandagain/sentiment',
+    },
+  },
+  {
     title: `OpenCV.js (OpenCV)`,
     description: `OpenCV library for functions mainly aimed at real-time computer vision for your Browser. OpenCV.js is a JavaScript binding that exposes OpenCV library to the web.`,
     values: {
