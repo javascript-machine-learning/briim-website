@@ -2,6 +2,7 @@ import React from 'react';
 
 import ArticleType from '../components/References/ArticleType';
 import ArticleLink from '../components/References/ArticleLink';
+import DateDisplay from '../components/References/DateDisplay';
 import Level from '../components/References/Level';
 import LearningType from '../components/References/LearningType';
 import LearnLink from '../components/References/LearnLink';
@@ -19,6 +20,7 @@ import { PROJECTS_MAIN, PROJECTS_LIST } from './projects';
 const blogReferences = [
   ({ values }) => <ArticleType articleType={values.articleType} />,
   ({ values }) => <ArticleLink articleLink={values.articleLink} />,
+  ({ values }) => <DateDisplay date={values.releaseDate} />,
 ];
 
 const learnReferences = [

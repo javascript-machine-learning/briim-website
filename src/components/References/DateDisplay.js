@@ -5,9 +5,9 @@ const Uppercase = styled.span`
   text-transform: uppercase;
 `
 
-const Language = ({ language }) =>
-  language
-    ? <span>Language: <Uppercase>{language}</Uppercase></span>
+const DateDisplay = ({ date }) =>
+  date
+    ? <span>Release Date: <Uppercase>{date}</Uppercase></span>
     : null
 
-export default Language;
+export default DateDisplay;

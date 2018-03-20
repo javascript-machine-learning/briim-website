@@ -1,4 +1,5 @@
 import React from 'react';
+import format from 'date-fns/format';
 
 const ARTICLE_TYPES = {
   tutorial: 'Tutorial',
@@ -6,8 +7,6 @@ const ARTICLE_TYPES = {
   project: 'Project',
   discussion: 'Discussion',
 };
-
-
 
 // Recent Last, Oldest First
 export const BLOG_LIST = [
@@ -17,14 +16,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'http://burakkanber.com/blog/machine-learning-in-other-languages-introduction/',
-    },
-  },
-  {
-    title: `Machine Learning with OpenCV and JavaScript: Recognizing Handwritten Letters using HOG and SVM`,
-    description: `This tutorial teaches you how to train your own Support Vector Machine (SVM) from a set of training images for image classification with OpenCV and JavaScript.`,
-    values: {
-      articleType: ARTICLE_TYPES.tutorial,
-      articleLink: 'https://medium.com/@muehler.v/machine-learning-with-opencv-and-javascript-part-1-recognizing-handwritten-letters-using-hog-and-88719b70efaa',
+      releaseDate: format(new Date(2012, 9, 3), 'MM/DD/YYYY'),
     },
   },
   {
@@ -33,22 +25,16 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://medium.com/@muehler.v/simple-hand-gesture-recognition-using-opencv-and-javascript-eb3d6ced28a0',
+      releaseDate: format(new Date(2017, 9, 5), 'MM/DD/YYYY'),
     },
   },
   {
-    title: `Node.js + OpenCV for Face Recognition`,
-    description: `This tutorial builds with you a simple Node.js face recognition example with the OpenCV's face module.`,
+    title: `Machine Learning with OpenCV and JavaScript: Recognizing Handwritten Letters using HOG and SVM`,
+    description: `This tutorial teaches you how to train your own Support Vector Machine (SVM) from a set of training images for image classification with OpenCV and JavaScript.`,
     values: {
       articleType: ARTICLE_TYPES.tutorial,
-      articleLink: 'https://medium.com/@muehler.v/node-js-opencv-for-face-recognition-37fa7cb860e8',
-    },
-  },
-  {
-    title: `Node.js meets OpenCV’s Deep Neural Networks`,
-    description: `This tutorial teaches you how to load pretrained models from Tensorflow and Caffe with OpenCV’s DNN module. You will dive into two examples for object recognition with Node.js and OpenCV.`,
-    values: {
-      articleType: ARTICLE_TYPES.tutorial,
-      articleLink: 'https://medium.com/@muehler.v/node-js-meets-opencvs-deep-neural-networks-fun-with-tensorflow-and-caffe-ff8d52a0f072',
+      articleLink: 'https://medium.com/@muehler.v/machine-learning-with-opencv-and-javascript-part-1-recognizing-handwritten-letters-using-hog-and-88719b70efaa',
+      releaseDate: format(new Date(2017, 9, 20), 'MM/DD/YYYY'),
     },
   },
   {
@@ -57,6 +43,16 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/linear-regression-gradient-descent-javascript/',
+      releaseDate: format(new Date(2017, 10, 19), 'MM/DD/YYYY'),
+    },
+  },
+  {
+    title: `Node.js + OpenCV for Face Recognition`,
+    description: `This tutorial builds with you a simple Node.js face recognition example with the OpenCV's face module.`,
+    values: {
+      articleType: ARTICLE_TYPES.tutorial,
+      articleLink: 'https://medium.com/@muehler.v/node-js-opencv-for-face-recognition-37fa7cb860e8',
+      releaseDate: format(new Date(2017, 11, 7), 'MM/DD/YYYY'),
     },
   },
   {
@@ -65,6 +61,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/improving-gradient-descent-javascript/',
+      releaseDate: format(new Date(2017, 11, 16), 'MM/DD/YYYY'),
     },
   },
   {
@@ -73,6 +70,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/linear-regression-gradient-descent-vectorization-javascript/',
+      releaseDate: format(new Date(2017, 11, 21), 'MM/DD/YYYY'),
     },
   },
   {
@@ -81,6 +79,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/multivariate-linear-regression-gradient-descent-javascript/',
+      releaseDate: format(new Date(2017, 11, 23), 'MM/DD/YYYY'),
     },
   },
   {
@@ -89,6 +88,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/multivariate-linear-regression-normal-equation-javascript/',
+      releaseDate: format(new Date(2017, 12, 2), 'MM/DD/YYYY'),
     },
   },
   {
@@ -97,6 +97,7 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/logistic-regression-gradient-descent-classification-javascript/',
+      releaseDate: format(new Date(2017, 12, 4), 'MM/DD/YYYY'),
     },
   },
   {
@@ -105,6 +106,16 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.tutorial,
       articleLink: 'https://www.robinwieruch.de/neural-networks-deeplearnjs-javascript',
+      releaseDate: format(new Date(2017, 12, 5), 'MM/DD/YYYY'),
+    },
+  },
+  {
+    title: `Node.js meets OpenCV’s Deep Neural Networks`,
+    description: `This tutorial teaches you how to load pretrained models from Tensorflow and Caffe with OpenCV’s DNN module. You will dive into two examples for object recognition with Node.js and OpenCV.`,
+    values: {
+      articleType: ARTICLE_TYPES.tutorial,
+      articleLink: 'https://medium.com/@muehler.v/node-js-meets-opencvs-deep-neural-networks-fun-with-tensorflow-and-caffe-ff8d52a0f072',
+      releaseDate: format(new Date(2017, 12, 8), 'MM/DD/YYYY'),
     },
   },
   {
@@ -113,10 +124,19 @@ export const BLOG_LIST = [
     values: {
       articleType: ARTICLE_TYPES.discussion,
       articleLink: 'https://www.robinwieruch.de/machine-learning-javascript-web-developers',
+      releaseDate: format(new Date(2018, 1, 10), 'MM/DD/YYYY'),
+    },
+  },
+  {
+    title: `You can build a neural network in JavaScript even if you don’t really understand neural networks`,
+    description: `The article guides you through implementing a neural network with Brain.js in JavaScript. It's a dead-simple, beginner level explanation of how to implement Brain.js that goes a bit beyond the documentation.`,
+    values: {
+      articleType: ARTICLE_TYPES.tutorial,
+      articleLink: 'https://itnext.io/you-can-build-a-neural-network-in-javascript-even-if-you-dont-really-understand-neural-networks-e63e12713a3',
+      releaseDate: format(new Date(2018, 3, 12), 'MM/DD/YYYY'),
     },
   },
 ].reverse();
-// Recent Last, Oldest First
 
 export const BLOG_MAIN = {
   header: 'Blog',
