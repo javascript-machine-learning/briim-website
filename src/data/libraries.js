@@ -10,6 +10,14 @@ export const LIBRARIES_LIST = [
     },
   },
   {
+    title: `Propel`,
+    description: `Propel provides a GPU-backed numpy-like infrastructure for scientific computing in JavaScript. JavaScript is a fast, dynamic language which, we think, could act as an ideal workflow for scientific programmers of all sorts.`,
+    values: {
+      power: 'Scientific Computing',
+      library: 'https://github.com/propelml/propel',
+    },
+  },
+  {
     title: `D3.js`,
     description: `D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.`,
     values: {
@@ -47,6 +55,14 @@ export const LIBRARIES_LIST = [
     values: {
       power: 'Computer Vision',
       library: 'https://github.com/justadudewhohacks/opencv4nodejs',
+    },
+  },
+  {
+    title: `face-recognition.js`,
+    description: `face-recognition.js is a simple Node.js API for robust face detection and face recognition.`,
+    values: {
+      power: 'Face Recognition',
+      library: 'https://github.com/justadudewhohacks/face-recognition.js',
     },
   },
   {
