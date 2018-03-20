@@ -5,6 +5,7 @@
   "author": "Robin Wieruch <wrobin@gmx.net>",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "date-fns": "^1.29.0",
     "express": "^4.16.2",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.31",
