@@ -57,28 +57,20 @@ const IndexPage = ({ header, subheader }) => (
         </Aside>
       </Section>
 
-      <Section>
+      <Section isAlternating={true}>
         <Aside>
           <h3>
-            Take the JavaScript in ML Course
+            Create a Movement
           </h3>
           <p>
-            Take the journey as JavaScript enthusiast or Web Developer to explore Machine Learning in the Browser with WebGL. Simply broaden your horizon or take a leap into this professional field.
+            Machine learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a community.
           </p>
-
-          <ButtonButAnchor href={'https://www.getrevue.co/profile/briim'}>
-            [WIP: 2018]
-          </ButtonButAnchor>
         </Aside>
         <Aside>
-          <h3>
-
-          </h3>
           <ul>
-            <li>Train Deep Neural Networks in the Browser</li>
-            <li>Apply SVM, K-Means and PCA to your Data</li>
-            <li>Implement Shallow Algorithms from Scratch</li>
-            <li>Dive into various subfields of AI (<Anchor href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</Anchor>, <Anchor href="https://en.wikipedia.org/wiki/Computer_vision">CV</Anchor>)</li>
+            <li>Join our Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
+            <li>Join our Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
+            <li>Join us for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
           </ul>
         </Aside>
       </Section>
@@ -99,24 +91,6 @@ const IndexPage = ({ header, subheader }) => (
         <Aside>
           <ImageFadeIn src={mnistNeuralNetwork} alt="mnist-neural-network" />
           <Caption>MNIST Digit Recognition</Caption>
-        </Aside>
-      </Section>
-
-      <Section isAlternating={true}>
-        <Aside>
-          <h3>
-            Create a Movement
-          </h3>
-          <p>
-            Machine learning is pushed forward from several programming languages but JavaScript. Let's take it on a next level for web developers and JavaScript enthusiasts as well. It's not an effort of an individual but of a community.
-          </p>
-        </Aside>
-        <Aside>
-          <ul>
-            <li>Join our Newsletter for <Anchor href="https://www.getrevue.co/profile/briim">Updates</Anchor></li>
-            <li>Join our Slack for <Anchor href="http://slack.bri.im/">Discussions</Anchor></li>
-            <li>Join us for <Anchor href="https://github.com/javascript-machine-learning">Contributions</Anchor></li>
-          </ul>
         </Aside>
       </Section>
 
