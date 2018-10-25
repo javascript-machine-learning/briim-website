@@ -1,5 +1,7 @@
 # 🐣 gatsby-movement
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/briim-website.svg?token=d70f0a6a31fe3f78f757c2eb6bbdcd814212e753c54215845e9496794d1290ac&ts=1540442175714)](https://greenkeeper.io/)
+
 Your minimal yet slick landing page to create a movement around your idea, service or product.
 
 [Demo TODO](https://www.roadtolearnreact.com/) | Powered by [Gatsby](https://github.com/gatsbyjs/gatsby)
