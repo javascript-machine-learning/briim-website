@@ -6,7 +6,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "date-fns": "^1.29.0",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.31",
     "gatsby-plugin-google-analytics": "^1.0.10",
